@@ -1,0 +1,115 @@
+/*
+ * Styles
+ */
+.header {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-size: 28px;
+  padding: var(--space-small) var(--space-medium);
+}
+
+@media (min-width: 600px) {
+  .header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.site-description {
+  font-size: 80%;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  gap: var(--space-medium);
+  justify-content: center;
+  list-style: none;
+  margin: var(--space-small) 0 0;
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .menu {
+    margin: 0;
+  }
+}
+
+.menu__link,
+.menu__link:visited {
+  color: var(--white-color);
+  text-decoration-color: var(--white-color);
+  text-decoration-thickness: 1px;
+  text-decoration: underline;
+  text-underline-offset: 3.5px;
+}
+
+.main {
+  font-size: 28px;
+  line-height: 42px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: var(--space-medium) var(--space-medium) 0;
+}
+
+.section {
+  margin-bottom: var(--space-large);
+}
+
+h1 {
+  font-size: 120px;
+  line-height: 120px;
+  margin: var(--space-large) 0;
+}
+
+h2 {
+  font-size: 70px;
+  line-height: 70px;
+  margin: var(--space-medium) 0;
+}
+
+a,
+a:visited {
+  color: var(--blue-color);
+  text-decoration-color: var(--blue-color);
+  text-decoration-thickness: 1px;
+  text-decoration: underline;
+  text-underline-offset: 3.5px;
+}
+
+p {
+  margin-bottom: var(--space-medium);
+}
+
+figure {
+  margin-top: var(--space-large);
+}
+
+figcaption {
+  font-size: 20px;
+  margin-top: var(--space-small);
+}
+
+.footer {
+  margin: 0;
+  padding: var(--space-medium);
+}
+
+.footer p {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  display: inline-block;
+  font-size: 20px;
+  margin: 0;
+  padding: var(--space-small) var(--space-medium);
+}
+
+.footer__link,
+.footer__link:visited {
+  color: var(--white-color);
+  text-decoration-color: var(--white-color);
+  text-decoration-thickness: 1px;
+  text-decoration: underline;
+  text-underline-offset: 3.5px;
+}

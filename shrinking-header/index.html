@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrinking header</title>
+    <style>*,::after,::before{box-sizing:border-box}*{margin:0}body{line-height:1.5;-webkit-font-smoothing:antialiased}canvas,img,picture,svg,video{display:block;max-width:100%}button,input,select,textarea{font:inherit}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}h1,h2,h3,h4,h5,h6{font-weight:400}:root{--black-color:#000000;--white-color:#ffffff;--blue-color:#0000ff;--border-color:#e3e3e3;--border-color-light:#f6f6f6;--space-small:20px;--space-medium:40px;--space-large:80px;--space-xlarge:160px;--space-xxlarge:320px;--font-family:"Cormorant Garamond",serif}body{background-color:var(--white-color);font-family:var(--font-family);color:var(--black-color)}</style>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .main {
+        margin: 200px auto 0;
+      }
+
+      .header {
+        padding: var(--space-large) var(--space-medium);
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      @keyframes shrink-header {
+        to {
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+            rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          font-size: 20px;
+          padding: var(--space-small) var(--space-medium);
+        }
+      }
+
+      .header {
+        animation: shrink-header linear forwards;
+        animation-range: 0 5%;
+        animation-timeline: scroll();
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <span class="site-title">CSS .scroll <em>driven</em> animations</span>
+        <p class="site-description">Shrinking header</p>
+      </div>
+      
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="https://lopezb.com/experiments/scroll-animations/index.html" class="menu__link">
+              Back to menu
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1>Arrr, Arrgh, Yarr, Gar!</h1>
+      
+      <section class="section section--1">
+        <p>Loaded to the gunwalls case shot mizzen bucko doubloon swing the lead prow gabion hands wherry. Mutiny Admiral of the Black lateen sail league deadlights parley square-rigged keelhaul starboard pirate. Squiffy bilge furl Letter of Marque splice the main brace Spanish Main grapple reef sails trysail scurvy.</p>
+
+        <p>Lugger landlubber or just lubber bilge rat log jib capstan parley lanyard carouser skysail. Hogshead lad matey smartly jury mast driver quarterdeck belay barque brigantine. Shiver me timbers Blimey mizzen dance the hempen jig crack Jennys tea cup galleon Jolly Roger starboard booty lanyard.</p>
+        
+        <figure>
+          <img src="../images/01.jpg" alt="Milad Fakurian" width="720" height="405">
+          <figcaption>Photo by <a href="https://unsplash.com/@fakurian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Milad Fakurian</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-red-and-yellow-object-L-1LTBgr5js?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+        </figure>
+      </section>
+
+      <section class="section section--2">
+        <h2>Ahoy</h2>
+        <p>Topgallant Pieces of Eight port Sail ho handsomely league rope's end grapple provost jury mast. Chantey Jack Tar skysail Brethren of the Coast avast quarter long boat wherry Corsair marooned. Line Jack Ketch boatswain clipper trysail spike ahoy landlubber or just lubber hempen halter lanyard.</p>
+
+        <p>Swab chase guns wherry knave bilge water scourge of the seven seas league parrel Admiral of the Black boatswain. Shiver me timbers Buccaneer Sail ho boom take a caulk ho furl rigging lanyard fluke. Bowsprit Privateer belay brig league black spot swing the lead warp scuttle list.</p>
+
+        <figure>
+          <img src="../images/02.jpg" alt="Ayush Kumar" width="720" height="720">
+          <figcaption>Photo by <a href="https://unsplash.com/@spexypants?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ayush Kumar</a> on <a href="https://unsplash.com/photos/a-bunch-of-white-and-orange-balls-on-top-of-each-other-HTIBjxiF7nM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+        </figure>
+      </section>
+
+      <section class="section section--3">
+        <h2>Davy Jones’s locker</h2>
+        <p>Bring a spring upon her cable wherry square-rigged keel topgallant scuppers hearties walk the plank spirits holystone. Swab long clothes capstan sutler overhaul sheet interloper grapple poop deck Chain Shot. Scurvy walk the plank reef sails chandler square-rigged tack careen rutters killick pressgang.</p>
+
+        <p>Six pounders loaded to the gunwalls bilge rat hardtack square-rigged jury mast mizzen heave down take a caulk Shiver me timbers. Line Yellow Jack cackle fruit weigh anchor blow the man down booty lanyard salmagundi starboard piracy. Brig bucko swing the lead Chain Shot aft Sail ho tack gaff six pounders wherry.</p>
+
+        <figure>
+          <img src="../images/03.jpg" alt="Vadim Bogulov" width="720" height="720">
+          <figcaption>Photo by <a href="https://unsplash.com/@franku84?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vadim Bogulov</a> on <a href="https://unsplash.com/photos/a-bunch-of-oranges-stacked-on-top-of-each-other-Bl9waYtguUk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+        </figure>
+      </section>
+
+      <section class="section section--4">
+        <h2>Chew the fat</h2>
+        <p>Clipper heave down skysail bowsprit warp pillage ye deadlights barkadeer no prey, no pay. Spike tackle broadside plunder pinnace barque careen Blimey gibbet bilged on her anchor. Careen ahoy Jack Tar no prey, no pay Sail ho parley hearties doubloon pinnace grapple.</p>
+
+        <p>Swing the lead yardarm chase squiffy bucko no prey, no pay Plate Fleet Nelsons folly Davy Jones' Locker mutiny. Lateen sail bilge hardtack draft ho knave measured fer yer chains spyglass Blimey reef sails. Swing the lead log case shot chantey wench draught clap of thunder long boat wherry Privateer.</p>
+
+        <figure>
+          <img src="../images/04.jpg" alt="Cyril Blackbird" width="720" height="720">
+          <figcaption>Photo by <a href="https://unsplash.com/@blackbird_studio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cyril Blackbird</a> on <a href="https://unsplash.com/photos/a-yellow-and-white-object-sitting-on-top-of-a-table-35ZdEWfAWsU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+        </figure>
+      </section>
+
+      <section class="section section--5">
+        <h2>Bail out </h2>
+        <p>Topmast marooned walk the plank keelhaul keel run a shot across the bow Gold Road crimp jury mast Brethren of the Coast. Keelhaul brigantine schooner Brethren of the Coast spirits bucko chantey draft wench sloop. Arr doubloon scurvy poop deck Jack Ketch boom clipper barque scuttle bilge.</p>
+
+        <p>Long boat chase guns gangway scurvy coxswain loot Letter of Marque Sea Legs square-rigged ye. Grog blossom cable Corsair bilge water hardtack belaying pin crow's nest long boat Blimey flogging. Draft no prey, no pay keel broadside galleon cackle fruit Gold Road Brethren of the Coast brigantine six pounders.</p>
+
+        <figure>
+          <img src="../images/05.jpg" alt="Resource Database" width="720" height="900">
+          <figcaption>Photo by <a href="https://unsplash.com/@resourcedatabase?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Resource Database</a> on <a href="https://unsplash.com/photos/a-black-and-white-photo-of-some-rocks-OlKCSY2O1AE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+        </figure>
+      </section>
+
+      <section class="section section--6">
+        <h2>Booty</h2>
+        <p>Sail ho ballast bilged on her anchor barque sheet blow the man down run a rig quarter maroon gibbet. Yellow Jack measured fer yer chains haul wind draught sutler gabion lookout port brig starboard. Warp six pounders hearties Shiver me timbers execution dock line hornswaggle keelhaul bilge scurvy.</p>
+
+        <p>Execution dock scurvy grapple Chain Shot run a shot across the bow jack barkadeer lass careen walk the plank. Parley spike grog blossom dead men tell no tales Corsair me cog broadside keelhaul black jack. Dead men tell no tales barque Corsair smartly bilge rope's end Shiver me timbers hogshead crow's nest furl.</p>
+
+        <figure>
+          <img src="../images/06.jpg" alt="Jack McCracken" width="720" height="720">
+          <figcaption>Photo by <a href="https://unsplash.com/@jackbmc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jack McCracken</a> on <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-curved-object-0CvxRjoHqeE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Follow me on <a href="https://twitter.com/LopezBenito" class="footer__link">X/Twitter</a></p>
+    </footer>
+  </body>
+</html>
